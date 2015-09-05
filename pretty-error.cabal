@@ -11,17 +11,6 @@ description:         Sometimes you need to assume something at runtime that you 
                      invariants don't hold at runtime. The functions all pretty print any Haskell
                      values given to them, which makes it easier to understand what's going on when
                      your code breaks.
-                     .
-                     == Examples
-                     .
-                     >>> assertRight "Example message" (Right 42)
-                     42
-                     .
-                     >>> assertRight "Example message" (Left "unexpected error")
-                     *** Exception: Example message: "unexpected error"
-                     .
-                     >>> fromRight (Left ["foo","bar","baz"])
-                     *** Exception: [ "foo" , "bar" , "baz" ]
 homepage:            https://github.com/jml/pretty-error
 license:             Apache-2.0
 license-file:        LICENSE
