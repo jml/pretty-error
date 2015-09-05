@@ -31,6 +31,10 @@ copyright:           (c) 2015 Jonathan M. Lange
 build-type:          Simple
 cabal-version:       >=1.10
 
+source-repository head
+  type:     git
+  location: git://github.com:jml/pretty-error.git
+
 library
   exposed-modules:   PrettyError
   build-depends:       base >= 4 && < 5
